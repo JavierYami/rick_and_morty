@@ -1,7 +1,7 @@
 import './App.css'
-import Cards from './components/Cards.jsx'
+import Cards from './components/Cards/Cards.jsx'
 import characters from './data.js'
-import Nav from './components/Nav'
+import Nav from './components/Nav/Nav'
 
 function App () {
   return (
