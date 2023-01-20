@@ -5,6 +5,7 @@ import { useState } from 'react'
 import { Routes, Route} from 'react-router-dom'
 import About from './components/About/About'
 import Detail from './components/Detail/Detail'
+import Error from './components/Error/Error'
 
 function App () {
 
@@ -34,7 +35,8 @@ const onClose = (id) => {
         <Routes>
           <Route path='/home' element={<Cards onClose={onClose} characters={characters}/>}/>
           <Route path='/about' element={<About/>}/>
-          <Route path='detail/:detailId' element={<Detail/>}/>
+          <Route path='detail/:detailId' element={<Detail />}/>
+          <Route path=':error' element={<Error/>}/>
         </Routes>
     </div>
   )
