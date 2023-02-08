@@ -34,7 +34,7 @@ const onClose = (id) => {
 }
 
   return (
-    <div className='App' style={{ padding: '25px' }}>
+    <div className='App'>
           {location.pathname === '/' ? <Form/> : <Nav onSearch={onSearch}></Nav>}
         <Routes>
           <Route path='/home' element={<Cards onClose={onClose} characters={characters}/>}/>

@@ -22,6 +22,13 @@ const Form = () => {
             ...userData,
             [name] : value,
         })
+
+        setErrors(validation({
+            ...userData,
+            [name] : value,
+        }))
+
+        console.log(errors)
     }
 
 
@@ -31,6 +38,7 @@ const Form = () => {
             <div>
             <label>Username</label>
             <input type="text" value={userData.username} onChange={handleOnChange} name='username'/>
+            <p>{errors.username}</p>
             </div>
 
             <div>

@@ -1,5 +1,27 @@
 .nav{
-    background-color: greenyellow;
-    border: 1px green solid;
+    background-color: #ffffff;
     margin: 0px;
+    padding: 20px;
+    display: flex;
+    flex-direction: row;
+    justify-content:space-between;
+    border: 2.3px #ced6e0 solid;
+}
+
+.btn{
+    background-color: #ffffff;
+    padding: .5rem;
+    border: 2.3px #ced6e0 solid;
+    margin-right: 20px;
+    font-weight:bolder;
+    transition: .2s;
+    border-radius: 1rem;
+}
+.btn:hover{
+    background-color: #ced6e0;
+    color: #ffffff;
+    cursor: pointer;
+}
+.div{
+    margin-left: 10%;
 }
